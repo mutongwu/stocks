@@ -1,0 +1,98 @@
+.homePage .hd{
+    padding: 0.5rem;
+    overflow: hidden;
+    background: #0a00df;
+    color: #fff;
+    height:3rem;
+}
+.homePage .hd .imgBox{
+    width: 2.3rem;
+    float: left;
+}
+.homePage .hd .imgBox .header{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    border:3px solid #fff;
+}
+.homePage .hd .info{
+    padding-top: 0.1rem;
+}
+.homePage .hd .info .name{
+    font-size: 16px;
+}
+.homePage .bd .statBox{
+    overflow: hidden;
+    border-bottom: 2px solid #b2b2b2;
+}
+.homePage .statBox .statLeft,
+.homePage .statBox .statRight{
+    text-align: center;
+    width:50%;
+    height: 3rem;
+    box-sizing: border-box;
+}
+.homePage .statBox .statLeft{
+    float:left;
+    border-right: 1px solid #b2b2b2;
+}
+.homePage .statBox .statRight{
+    float:right;
+    border-left: 1px solid #b2b2b2;
+    padding-top: 0.6rem;
+}
+.homePage .statBox p{
+    font-size: 16px;
+    margin: 0.16rem 0;
+}
+.homePage .statBox .buy{
+    display: inline-block;
+    width: 0.68rem;
+    height: 0.68rem;
+    line-height: 0.68rem;
+    color: #fff;
+    font-size: 0.36rem;
+    border-radius: 50%;
+    background:#fe0201;
+    margin-top: 0.25rem;
+    overflow: hidden;
+}
+.homePage .statBox .num{
+    color: #fe0201;
+    font-size: 0.36rem;
+    font-weight: bold;
+    margin-top: 0.25rem;
+}
+
+.homePage .btnBox{
+    position: relative;
+    top: -15px;
+    text-align: center;
+}
+.homePage .bd .pointOfView{
+    padding: 0.2rem 0.6rem 0.6rem;
+}
+.homePage .bd .pointOfView strong{
+    float: left;
+    font-size: 18px;
+}
+.homePage .bd .pointOfView .txt{
+    display: block;
+    margin-left: 2rem;
+    font-size: 15px;
+    color: #0a00df;
+    line-height: 150%;
+}
+.homePage .anoucement .title{
+    background: #0a00df;
+    color: #fff;
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 21px;
+}
+.homePage .anoucement .txt{
+    margin: 0.6rem;
+    font-size: 15px;
+    line-height: 160%;
+}

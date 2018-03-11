@@ -1,28 +1,30 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App-tabBar{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App-tabBar .am-tab-bar-bar .am-tab-bar-tab-icon{
+  width: 100%;
 }
-
-.App-title {
-  font-size: 1.5em;
+.App-tabBar .am-tab-bar-bar .am-tab-bar-tab-icon a{
+  display: inline-block;
+  width: 100%;
 }
-
-.App-intro {
-  font-size: large;
+.App-tabBar .icon{
+  font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-tabBar .icon.selected{
+  font-size: 20px;
+  color: blue;
+}
+.App-tabBar .title{
+  display: block;
+}
+.App-tabBar .icon.selected+.title{
+  color: blue;
+  font-weight: bold;
 }
