@@ -1,0 +1,30 @@
+.Main {
+  text-align: center;
+}
+.Main-tabBar{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.Main-tabBar .am-tab-bar-bar .am-tab-bar-tab-icon{
+  width: 100%;
+}
+.Main-tabBar .am-tab-bar-bar .am-tab-bar-tab-icon a{
+  display: inline-block;
+  width: 100%;
+}
+.Main-tabBar .icon{
+  font-size: 20px;
+}
+.Main-tabBar .icon.selected{
+  font-size: 20px;
+  color: blue;
+}
+.Main-tabBar .title{
+  display: block;
+}
+.Main-tabBar .icon.selected+.title{
+  color: blue;
+  font-weight: bold;
+}

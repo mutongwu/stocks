@@ -1,0 +1,31 @@
+.profilePage .hd{
+    padding: 0.5rem;
+    overflow: hidden;
+    background: #0a00df;
+    color: #fff;
+    height:3rem;
+}
+.profilePage .hd .imgBox{
+    width: 2.3rem;
+    float: left;
+}
+.profilePage .hd .imgBox .header{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    border:3px solid #fff;
+}
+.profilePage .hd .info{
+    padding-top: 0.1rem;
+}
+.profilePage .hd .info .name{
+    font-size: 16px;
+}
+.profilePage .bd .listBox .icon{
+    font-size: 26px;
+    color: #0a00df;
+}
+.profilePage .bd .am-list-item.am-list-item-middle .am-list-line{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
