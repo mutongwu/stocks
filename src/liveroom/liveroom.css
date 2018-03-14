@@ -1,0 +1,126 @@
+.liveRoomPage{
+    background: #d7d7d7;
+    padding-bottom: 0.75rem;
+}
+.liveRoomPage h1{
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    background: #0800dd;
+    color: #fff;
+    margin: 0;
+}
+.liveRoomPage .hd{
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ddd;
+    color: #fff;
+    background: #001eef;
+    height: 2.9rem;
+    margin-bottom: 0.1rem;
+}
+.liveRoomPage .hd .imgBox{
+    width: 1.25rem;
+    float: left;
+    padding: 0.6rem 0.6rem 0;
+}
+.liveRoomPage .hd .imgBox .header{
+    width: 1.24rem;
+    height: 1.24rem;
+    border-radius: 50%;
+    border:1px solid #fff;
+}
+.liveRoomPage .hd .viewText{
+    
+    position: relative;
+    height: 100%;
+    margin-left:2.7rem;
+    
+}
+.liveRoomPage .hd .viewText .title{
+    display: inline-block;
+    /*height: 0.36rem;*/
+    line-height: 0.36rem;
+    font-size:13px;
+    width: 1.94rem;
+    margin-top:0.3rem;
+    text-align: center;
+    color: #0a00df;
+    background: #fff;
+    border-radius:3px
+}
+.liveRoomPage .hd .viewText .text{
+    margin-top: 0.25rem;
+    margin-right:.4rem;
+    line-height: 130%;
+    opacity: 0.9;
+    zoom: 0.9;
+}
+.liveRoomPage .bBar{
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    left: 0;
+    opacity: 0.5;
+}
+.liveRoomPage .bBar .dt{
+    margin-top: 0.3rem;
+}
+.liveRoomPage .bBar .actionBox{
+    margin: 0 0.1rem 0.13rem 0;
+}
+.liveRoomPage .bBar .action{
+    float: left;
+    text-align: center;
+    margin-right:0.3rem;
+}
+.liveRoomPage .bBar .action .iconTxt{
+    display: block;
+    margin-top:0.05rem;
+    font-size:12px;
+}
+
+.liveRoomPage .listItem{
+    height:2.38rem;
+    padding: 0.6rem 0.5rem 0.2rem;
+    margin-bottom: 0.2rem;
+    border-bottom: 2px solid #a0a0a0;
+    background: #fff;
+}
+.liveRoomPage .listItem .itemBox{
+    position: relative;
+    height: 100%;
+}
+.liveRoomPage .listItem .text{
+    line-height: 150%;
+    font-size:0.3rem;
+    margin: 0;
+}
+.liveRoomPage .listItem .bBar .actionBox{
+    margin-right: 0;
+}
+.liveRoomPage .listItem .bBar .dt{
+    font-size: 14px;
+}
+.liveRoomPage .ftBar{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:100%;
+    /*height: 0.75rem;*/
+    background: #0a00df;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    font-size:0.26rem;
+}
+.liveRoomPage .ftBar .barItem{
+    display: inline-block;
+    width: 29%;
+    line-height: 0.75rem;
+}
+.liveRoomPage .ftBar .barItem:nth-child(2){
+    width: 40%;
+    border-width: 0 1px;
+    border-color:#eee;
+    border-style: groove;
+}

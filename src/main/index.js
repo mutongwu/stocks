@@ -10,7 +10,7 @@ import './main.css';
 class Main extends Component {
   constructor(props) {
     super(props);
-    this.init();
+    this.state = {};
   }
   init() {
     this.items = [{
@@ -34,14 +34,13 @@ class Main extends Component {
     }];
     let path = /#(\/\w+)/.test(window.location.hash) && RegExp.$1;
     let match = this.items.filter( item => item.path === path);
-    console.log(path, match);
-    this.state = {
-      selectedTab: match[0] && match[0].key || 'trade',
+    this.setState({
+      selectedTab: (match[0] && match[0].key) || 'trade',
       hidden: false,
-    };
+    });
   }
   componentWillMount(){
-    console.log(this.context)
+    this.init();
   }
   selectTab(item) {
     this.setState({
@@ -50,7 +49,6 @@ class Main extends Component {
   }
   render() {
     let items = this.items;
-    let match = this.props.match;
     return (
         <div className="Main-tabBar">
           <TabBar
@@ -60,7 +58,6 @@ class Main extends Component {
             hidden={this.state.hidden}
           >
           {items.map( item => {
-              console.log(`${match.url}`)
             return (<TabBar.Item
               icon={<Link to={item.path}><i className={`icon iconfont ${item.icon}`}/><span className="title">{item.title}</span></Link> }
               selectedIcon={<Link to={item.path}><i className={`icon selected iconfont ${item.icon}`}/><span className="title">{item.title}</span></Link>}
