@@ -124,3 +124,30 @@
     border-color:#eee;
     border-style: groove;
 }
+
+.liveRoomPage .popBox{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+.liveRoomPage .popBox .innerBox{
+    width: 100%;
+    height: 5rem;
+    padding:0.4rem 0.2rem;
+    background: #fff;
+    box-sizing: border-box;
+}
+.liveRoomPage .popBox .question{
+    width: 100%;
+    height: 3.5rem;
+    border:none;
+    margin:0;
+    padding: 0;
+}
+.liveRoomPage .popBox .btnBox{
+    padding-right: 0.1rem;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Button} from 'antd-mobile';
 import './liveroom.css';
 import people from '../asserts/people.jpg';
 
@@ -16,6 +16,29 @@ class LiveRoom extends Component{
             dt: '2018-03-06 11:22',
             text: '开年以来，50万战队首席申玲芝老师提示的个股仅3只，但涨幅却很惊人！ 截至目前，“南京银行”涨幅15.12%！“方大特钢”涨幅23.45%！'
         }];
+        this.state = {
+            popFlag: false
+        };
+    }
+    showPop(){
+        this.setState({
+            popFlag: true
+        });
+    }
+    hidePop(){
+        this.setState({
+            popFlag: false
+        });
+    }
+    renderPop(){
+        return (<div className="popBox">
+                <div className="innerBox">
+                    <textarea className="question" placeholder="编辑内容："></textarea>
+                    <div className="btnBox tr">
+                        <Button type="primary" inline size="small" onClick={this.hidePop.bind(this)}>点击发送</Button>
+                    </div>
+                </div>
+            </div>);
     }
     renderItem(item,key){
         return (<div className="listItem" key={key}>
@@ -33,7 +56,7 @@ class LiveRoom extends Component{
                                 <i className="iconfont icon-star-o"></i>
                                 <span className="iconTxt">收藏</span>
                             </div>
-                            <div className="action">
+                            <div className="action" onClick={this.showPop.bind(this)}>
                                 <i className="iconfont icon-question"></i>
                                 <span className="iconTxt">提问</span>
                             </div>
@@ -67,7 +90,7 @@ class LiveRoom extends Component{
                                 <i className="iconfont icon-star-o"></i>
                                 <span className="iconTxt">收藏</span>
                             </div>
-                            <div className="action">
+                            <div className="action" onClick={this.showPop.bind(this)}>
                                 <i className="iconfont icon-question"></i>
                                 <span className="iconTxt">提问</span>
                             </div>
@@ -87,6 +110,9 @@ class LiveRoom extends Component{
                     <span className="barItem">服务表</span>
                 </div>
             </div>
+            {
+                this.state.popFlag ? this.renderPop():null
+            }
         </div>)
     }
 }

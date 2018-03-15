@@ -9,5 +9,6 @@ a,a:active,a:visited{
 }
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .tc{text-align: center;}
+.tr{text-align: right;}
 .fl{float: left;}
 .fr{float: right;}
